@@ -1,0 +1,126 @@
+.products {
+  text-align: center; }
+  .products__title h3 {
+    font-family: "DIN Pro";
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-bottom: 23px; }
+  .products__title a {
+    display: block;
+    color: #d60202;
+    font-family: "Proxima Nova T - Thin",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration: none; }
+    .products__title a img {
+      margin-left: 5px; }
+  .products__items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-direction: row; }
+    .products__items__item {
+      margin-bottom: 20px; }
+      .products__items__item__up {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 255px;
+        height: 315px; }
+        .products__items__item__up span {
+          z-index: 300;
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          width: 38px;
+          height: 18px;
+          border: 1px solid #d60202;
+          color: #d60202;
+          font-family: "Segoe UI",Helvetica,Arial,sans-serif;
+          font-size: 10px;
+          font-weight: 300;
+          line-height: 17px;
+          text-transform: uppercase; }
+        .products__items__item__up__show {
+          display: none;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(33, 33, 33, 0.9);
+          flex-direction: column;
+          align-items: center;
+          justify-content: center; }
+          .products__items__item__up__show button {
+            cursor: pointer;
+            width: 160px;
+            height: 48px;
+            border: 1px solid #ffffff;
+            background-color: transparent;
+            color: #ffffff;
+            font-family: "Segoe UI",Helvetica,Arial,sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 38px;
+            text-transform: uppercase; }
+            .products__items__item__up__show button .fas {
+              color: #f6303e;
+              margin-right: 5px; }
+            .products__items__item__up__show button:hover {
+              background-color: #f6303e;
+              border: 1px solid #f6303e; }
+            .products__items__item__up__show button:hover .fas {
+              color: #ffffff; }
+            .products__items__item__up__show button:first-child {
+              margin-bottom: 19px; }
+          .products__items__item__up__show .old-prise {
+            left: 14px;
+            top: 264px;
+            width: 100%;
+            text-align: left;
+            border: 0;
+            height: 19px;
+            color: #ffffff;
+            font-family: "DIN Pro",Helvetica,Arial,sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 38px;
+            text-decoration: none; }
+          .products__items__item__up__show .new-prise {
+            left: 14px;
+            top: 236px;
+            width: 100%;
+            text-align: left;
+            border: 0;
+            color: #f6303e;
+            font-family: "DIN Pro",Helvetica,Arial,sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 38px;
+            text-decoration: line-through; }
+        .products__items__item__up:hover .products__items__item__up__show {
+          display: flex; }
+      .products__items__item__down {
+        width: 255px;
+        text-align: left;
+        padding-top: 50px; }
+        .products__items__item__down h4 {
+          margin: 0;
+          font-family: "DIN Pro";
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 22px; }
+          .products__items__item__down h4:hover {
+            color: #dc2f2f;
+            cursor: pointer; }
+        .products__items__item__down p {
+          margin: 0;
+          margin-top: 16px;
+          color: #8da5ba;
+          font-family: "Segoe UI - Semilight",Helvetica,Arial,sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 22px; }

@@ -1,0 +1,8 @@
+#mySong {
+	display: inline-block !important;
+	width: 150px;
+	height: 150px;
+}
+audio:not([controls]) {
+	display: block !important;
+}
