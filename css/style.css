@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto+Mono&display=swap");
 @font-face {
   font-family: "Segoe UI - Semilight";
   src: url("../font/10393.ttf"); }
@@ -10,8 +12,37 @@
   font-family: "Proxima Nova T - Thin";
   src: url("../font/ProximaNovaT-Thin.ttf"); }
 
+@font-face {
+  font-family: "Cutive Mono";
+  src: url("../font/CutiveMono-Regular.ttf"); }
+
+@font-face {
+  font-family: "Sunset Boulevard";
+  src: url("../font/Sunset Boulevard.otf"); }
+
 body {
-  background-color: #222222; }
+  font-style: normal;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  background-color: #222222;
+  background-image: url("../img/Barrack-Street.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  /*&::after {
+    z-index: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(17, 17, 17, 0.5);
+  }*/ }
   body ul {
     padding: 0; }
 
@@ -35,14 +66,22 @@ body {
   max-width: 1920px;
   margin: 18px auto 0 auto;
   padding: 0 15px;
-  min-height: 68px; }
-  .header__logo {
-    color: red; }
-    .header__logo a {
-      max-width: 150px;
-      display: block; }
-      .header__logo a img {
-        width: 100%; }
+  min-height: 68px;
+  position: relative;
+  z-index: 1; }
+  .header__logo a {
+    max-width: 231px;
+    display: block;
+    font-family: 'Roboto Mono';
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-shadow: white -1px -1px; }
+    .header__logo a img {
+      width: 100%;
+      display: none; }
   .header__nav {
     display: flex;
     flex-direction: column;
@@ -59,7 +98,7 @@ body {
       justify-content: space-between;
       align-items: center; }
       .header__nav__nav1 ul li a {
-        color: #717274;
+        color: #fff;
         font-family: "Segoe UI - Semilight",Helvetica,Arial,sans-serif;
         font-size: 14px;
         font-weight: 500;
@@ -110,13 +149,167 @@ body {
             .header__nav__nav2 ul li:last-child a img {
               margin: 3px 5px; }
 
+.selectdiv select, .lang select {
+  background-color: transparent;
+  color: #fff; }
+  .selectdiv select option, .lang select option {
+    color: #222222; }
+
+.main-history {
+  padding: 0 15px;
+  margin: 50px 0 0 0;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between; }
+  .main-history__left {
+    max-width: 55%; }
+    .main-history__left__up {
+      /*display: flex;
+      justify-content: center;
+      align-items: center;*/ }
+      .main-history__left__up .player {
+        margin-left: 150px; }
+        .main-history__left__up .player__controls #playIcon {
+          cursor: pointer;
+          max-width: 100px; }
+    .main-history__left__down {
+      margin: 50px 0 0 0; }
+      .main-history__left__down .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        color: #fff; }
+        .main-history__left__down .text__main {
+          font-family: 'Cutive Mono', monospace;
+          font-size: 1.6em;
+          font-weight: 600;
+          letter-spacing: 0.3em;
+          text-transform: uppercase;
+          text-shadow: white 0px 2px; }
+        .main-history__left__down .text .sep {
+          border: 0;
+          width: 11em;
+          height: 2px;
+          margin: 0 0 20px 0;
+          background-color: white; }
+        .main-history__left__down .text__description {
+          font-family: "Cutive Mono", monospace;
+          font-size: 1.2em;
+          margin: 0 0 0.5em;
+          line-height: 1.5;
+          white-space: normal;
+          max-width: 600px; }
+  .main-history__right {
+    width: 45%;
+    display: flex; }
+    .main-history__right__img {
+      max-width: 500px;
+      position: relative; }
+      .main-history__right__img img {
+        width: 370px;
+        opacity: 0.6;
+        position: absolute;
+        display: none; }
+  .main-history__equalizer {
+    position: fixed;
+    left: 2px;
+    top: 140px;
+    transform: rotate(90deg); }
+    .main-history__equalizer .equilizer {
+      height: 100px;
+      width: 100px;
+      transform: rotate(180deg); }
+    .main-history__equalizer .bar {
+      fill: #fff;
+      width: 18px;
+      animation: equalize 5s 0s infinite; }
+    .main-history__equalizer .bar:nth-child(1) {
+      animation-delay: -2.9s; }
+    .main-history__equalizer .bar:nth-child(2) {
+      animation-delay: -3s; }
+    .main-history__equalizer .bar:nth-child(3) {
+      animation-delay: -3.3s; }
+    .main-history__equalizer .bar:nth-child(4) {
+      animation-delay: -3.4s; }
+    .main-history__equalizer .bar:nth-child(5) {
+      animation-delay: -3.1s; }
+
+#example .new {
+  opacity: 0; }
+
+#example .div_opacity {
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1; }
+
+@keyframes equalize {
+  0% {
+    height: 60px; }
+  4% {
+    height: 50px; }
+  8% {
+    height: 40px; }
+  12% {
+    height: 30px; }
+  16% {
+    height: 20px; }
+  20% {
+    height: 30px; }
+  24% {
+    height: 40px; }
+  28% {
+    height: 10px; }
+  32% {
+    height: 40px; }
+  36% {
+    height: 60px; }
+  40% {
+    height: 20px; }
+  44% {
+    height: 40px; }
+  48% {
+    height: 70px; }
+  52% {
+    height: 30px; }
+  56% {
+    height: 10px; }
+  60% {
+    height: 30px; }
+  64% {
+    height: 50px; }
+  68% {
+    height: 60px; }
+  72% {
+    height: 70px; }
+  76% {
+    height: 80px; }
+  80% {
+    height: 70px; }
+  84% {
+    height: 60px; }
+  88% {
+    height: 50px; }
+  92% {
+    height: 60px; }
+  96% {
+    height: 70px; }
+  100% {
+    height: 80px; } }
+
 .footer {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 240px auto 28px auto; }
+  align-items: flex-end;
+  z-index: 1;
+  margin: 240px auto 0px auto;
+  padding: 0 15px 15px; }
   .footer__copyright span {
-    color: #ca1919;
+    color: #fff;
     font-family: "Segoe UI - Semilight",Helvetica,Arial,sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -126,7 +319,7 @@ body {
     display: flex;
     align-items: center; }
     .footer__we span {
-      color: #3f5b69;
+      color: #fff;
       font-family: "Segoe UI",Helvetica,Arial,sans-serif;
       font-size: 14px;
       font-weight: 300;

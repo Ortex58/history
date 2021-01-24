@@ -1,12 +1,11 @@
-$(document).ready(function(){
-	var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
-	{
-		m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
-		oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
-	}, {
-		cssSelectorAncestor: "#cp_container_1",
-		swfPath: "../../dist/jplayer",
-		wmode: "window",
-		keyEnabled: true
-	});
-});
+let mySong = document.getElementById('mySong')
+let iconSong = document.getElementById('playIcon')
+iconSong.onclick = function() {
+	if (mySong.paused) {
+		mySong.play();
+		iconSong.src = "media/pause.png"
+	}else {
+		mySong.pause();
+		iconSong.src = "media/play.png"
+	}
+}

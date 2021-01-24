@@ -1,5 +1,26 @@
 body {
-  background-color: #222222; }
+  font-style: normal;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  background-color: #222222;
+  background-image: url("../img/Barrack-Street.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  /*&::after {
+    z-index: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(17, 17, 17, 0.5);
+  }*/ }
   body ul {
     padding: 0; }
 

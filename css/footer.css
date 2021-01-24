@@ -2,9 +2,12 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 240px auto 28px auto; }
+  align-items: flex-end;
+  z-index: 1;
+  margin: 240px auto 0px auto;
+  padding: 0 15px 15px; }
   .footer__copyright span {
-    color: #ca1919;
+    color: #fff;
     font-family: "Segoe UI - Semilight",Helvetica,Arial,sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -14,7 +17,7 @@
     display: flex;
     align-items: center; }
     .footer__we span {
-      color: #3f5b69;
+      color: #fff;
       font-family: "Segoe UI",Helvetica,Arial,sans-serif;
       font-size: 14px;
       font-weight: 300;

@@ -6,13 +6,22 @@
 	margin: 18px auto 0 auto;
 	padding: 0 15px;
 	min-height: 68px;
+	position: relative;
+	z-index: 1;
 	&__logo {
-		color: red;
 		a {
-			max-width: 150px;
+			max-width: 231px;
 			display: block;
+			font-family: 'Roboto Mono';
+			text-decoration: none;
+			color: #fff;
+			font-size: 1.3em;
+			font-weight: 500;
+			letter-spacing: 2px;
+			text-shadow: white -1px -1px;
 			img {
 				width: 100%;
+				display: none;
 			}
 		}
 	}
@@ -35,7 +44,7 @@
 				align-items: center;
 				li {
 					a {
-						color: #717274;
+						color: #fff;
 						font-family: "Segoe UI - Semilight",Helvetica,Arial,sans-serif;
 						font-size: 14px;
 						font-weight: 500;
@@ -101,5 +110,12 @@
 				}
 			}
 		}
+	}
+}
+.selectdiv select, .lang select {
+	background-color: transparent;
+	color: #fff;
+	option {
+		color: #222222;
 	}
 }
