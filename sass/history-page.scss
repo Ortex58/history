@@ -30,6 +30,7 @@ $color-equalizer: #fff;
         flex-direction: column;
         justify-content: flex-start;
         color: #fff;
+        min-height: 400px;
         &__main {
           font-family: 'Cutive Mono', monospace;
           font-size: 1.6em;
@@ -73,6 +74,7 @@ $color-equalizer: #fff;
     }
   }
   &__equalizer {
+    display: none;
     position: fixed;
     left: 2px;
     top: 140px;
@@ -82,7 +84,6 @@ $color-equalizer: #fff;
       width: $max;
       transform: rotate(180deg);
     }
-
     .bar {
       fill: $color-equalizer;
       width: 18px;
@@ -201,4 +202,7 @@ $color-equalizer: #fff;
   100% {
     height: 80px;
   }
+}
+.show {
+  display: block;
 }
