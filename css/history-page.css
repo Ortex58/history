@@ -109,7 +109,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-height: 400px; }
+  min-height: 400px;
+  padding-bottom: 50px; }
   .text__title {
     font-family: "Cutive Mono", monospace;
     font-size: 1.4em;
@@ -132,8 +133,7 @@
     line-height: 1.3;
     letter-spacing: 1.5px;
     white-space: normal;
-    color: #fff;
-    padding-bottom: 50px; }
+    color: #fff; }
   .text__button--next {
     color: #fff;
     font-weight: 900;
@@ -146,6 +146,19 @@
       top: 1px;
       right: -20px;
       transition: all 0.5s ease 0.1s; }
+    .text__button--next.go-to-slide {
+      opacity: 0;
+      z-index: 0; }
+      .text__button--next.go-to-slide.show {
+        opacity: 1;
+        z-index: 5;
+        text-align: left;
+        width: 170px; }
+        .text__button--next.go-to-slide.show .fa-arrow-right {
+          right: unset;
+          margin-left: 10px; }
+        .text__button--next.go-to-slide.show:hover .fa-arrow-right {
+          margin-left: 15px; }
   .text__button:hover .fa-arrow-right {
     right: -30px; }
 
@@ -283,7 +296,8 @@
   left: 7px;
   width: 90px;
   height: 3px;
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1; }
   .angles__left-top::after {
     content: "";
     position: absolute;
@@ -299,7 +313,8 @@
   left: 7px;
   width: 90px;
   height: 3px;
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1; }
   .angles__left-bottom::after {
     content: "";
     position: absolute;
@@ -315,7 +330,8 @@
   right: 7px;
   width: 90px;
   height: 3px;
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1; }
   .angles__right-top::after {
     content: "";
     position: absolute;
@@ -331,7 +347,8 @@
   right: 7px;
   width: 90px;
   height: 3px;
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1; }
   .angles__right-bottom::after {
     content: "";
     position: absolute;

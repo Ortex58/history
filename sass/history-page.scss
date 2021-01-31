@@ -126,6 +126,7 @@ $color-equalizer: #fff;
   flex-direction: column;
   justify-content: flex-start;
   min-height: 400px;
+  padding-bottom: 50px;
   &__title {
     font-family: "Cutive Mono", monospace;
     font-size: 1.4em;
@@ -151,7 +152,6 @@ $color-equalizer: #fff;
     letter-spacing: 1.5px;
     white-space: normal;
     color: #fff;
-    padding-bottom: 50px;
   }
   &__button {
     &--next {
@@ -166,6 +166,25 @@ $color-equalizer: #fff;
         top: 1px;
         right: -20px;
         transition: all 0.5s ease 0.1s;
+      }
+      &.go-to-slide {
+        opacity: 0;
+        z-index: 0;
+        &.show {
+          opacity: 1;
+          z-index: 5;
+          text-align: left;
+          width: 170px;
+          .fa-arrow-right {
+            right: unset;
+            margin-left: 10px;
+          }
+          &:hover {
+            .fa-arrow-right {
+              margin-left: 15px;
+            }
+          }
+        }
       }
     }
     &:hover {
@@ -293,6 +312,7 @@ $color-equalizer: #fff;
     width: 90px;
     height: 3px;
     background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
     &::after {
       content: "";
       position: absolute;
@@ -310,6 +330,7 @@ $color-equalizer: #fff;
     width: 90px;
     height: 3px;
     background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
     &::after {
       content: "";
       position: absolute;
@@ -327,6 +348,7 @@ $color-equalizer: #fff;
     width: 90px;
     height: 3px;
     background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
     &::after {
       content: "";
       position: absolute;
@@ -344,6 +366,7 @@ $color-equalizer: #fff;
     width: 90px;
     height: 3px;
     background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
     &::after {
       content: "";
       position: absolute;

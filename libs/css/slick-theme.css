@@ -122,15 +122,16 @@
 .slick-dots
 {
     position: absolute;
-    bottom: 143px;
-    right: 0;
-    display: table;
-    float: right;
-    width: 33px;
-    height: 40%;
-    padding: 0px;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
     margin: 0;
+
     list-style: none;
+
     text-align: center;
 }
 .slick-dots li
@@ -159,7 +160,7 @@
 
     cursor: pointer;
 
-    color: black;
+    color: transparent;
     border: 0;
     outline: none;
     background: transparent;
@@ -187,10 +188,10 @@
     width: 20px;
     height: 20px;
 
-    content: url(../../img/slider_disable.png);
+    content: '•';
     text-align: center;
 
-    opacity: 1;
+    opacity: .25;
     color: black;
 
     -webkit-font-smoothing: antialiased;
@@ -200,8 +201,4 @@
 {
     opacity: .75;
     color: black;
-    position: relative;
-    float: right;
-    left: -15px;
-    content: url(../../img/slider_active.png);
 }
