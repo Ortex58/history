@@ -7,6 +7,7 @@ let toSlide = $('.go-to-slide');
 
 var play = true
 window.onload = function() {
+	mainSong.play();
 	mainSong.muted = false;
 	mainSong.volume = 0.1;
 };
