@@ -10,17 +10,7 @@ body {
   background-image: url("../img/Barrack-Street.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
-  /*&::after {
-    z-index: 0;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(17, 17, 17, 0.5);
-  }*/ }
+  height: 100%; }
   body ul {
     padding: 0; }
 
@@ -36,4 +26,11 @@ body {
 .main-wrapper {
   max-width: 1920px;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  z-index: 1; }
+
+.btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none; }

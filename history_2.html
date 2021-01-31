@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="uk">
+<!-- use animate css-->
+
+<head>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>History 2</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/select.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+		integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<link rel="stylesheet" href="libs/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+</head>
+
+<body>
+	<section class="first-paragraph" style="display: none;">
+		<h1 class="second text__title">Кантемирова (Шекерова) Олена Павлівна</h1>
+		<p class="first text__desc">Часто роми залишались непомітними для представників окупаційної влади.
+			Далеко не всі вели кочовий спосіб життя і різко виділялися на фоні іншого населення.
+			І в моменти, коли вирішувались питання гибелі чи порятунку,
+			найбільшу небезпеку часто уособлювали не окупанти, а ті,
+			кого роми знали можливо все своє життя – сусіди, вчителі, двірники,
+			чи просто знайомі, які могли донести і викрити їх етнічне походження.</p>
+		<button class="btn text__button text__button--next next-btn">Читати далі <i class="fas fa-arrow-right"></i></button>
+	</section>
+	<section class="second-paragraph" style="display: none;">
+		<p class="second text__desc">Часто роми залишались непомітними для представників окупаційної влади.
+			Далеко не всі вели кочовий спосіб життя і різко виділялися на фоні іншого населення.
+			І в моменти, коли вирішувались питання гибелі чи порятунку,
+			найбільшу небезпеку часто уособлювали не окупанти, а ті,
+			кого роми знали можливо все своє життя – сусіди, вчителі, двірники,
+			чи просто знайомі, які могли донести і викрити їх етнічне походження.</p>
+		<button class="btn text__button text__button--next end-btn">Читати далі <i class="fas fa-arrow-right"></i></button>
+	</section>
+	<div class="main-wrapper">
+		<header class="header">
+			<div class="header__logo">
+				<a href="#">THROUGH MY MIND<br>TO YOUR EYES<img src="img/logo.jpg" alt="logo"></a>
+			</div>
+			<nav class="header__nav">
+				<div class="header__nav__nav1">
+					<ul>
+						<!-- <li><a href="#"><i class="fas fa-search"></i></a></li> -->
+						<li>
+							<a href="#">HOME</a>
+						</li>
+						<li>
+							<a href="#">ABOUT US</a>
+						</li>
+						<li>
+							<div class="selectdiv">
+								<label>
+									<select>
+										<option selected="selected">+38 063 154 35 56</option>
+										<option>+38 063 454 56 12</option>
+									</select>
+								</label>
+							</div>
+						</li>
+						<li><img src="img/worldwide.png" alt="worldwide">
+							<div class="lang">
+								<label>
+									<select class="lang">
+										<option selected="selected">UA</option>
+										<option>UK</option>
+									</select>
+								</label>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class="main__audio">
+			<audio class="main__song" controls autoplay>
+				<source src="media/song.mp3" type="audio/mp3">
+			</audio>
+		</div>
+		<section class="main-history">
+			<div class="main-history__equalizer">
+				<svg xmlns="http://www.w3.org/2000/svg" class="equilizer" viewBox="0 0 128 128">
+					<g>
+						<title>Audio Equilizer</title>
+						<rect class="bar" transform="translate(0,0)" y="15"></rect>
+						<rect class="bar" transform="translate(25,0)" y="15"></rect>
+						<rect class="bar" transform="translate(50,0)" y="15"></rect>
+						<rect class="bar" transform="translate(75,0)" y="15"></rect>
+						<rect class="bar" transform="translate(100,0)" y="15"></rect>
+					</g>
+				</svg>
+			</div>
+			<div class="main-history__left">
+				<div class="main-history__left__up">
+					<div class="player">
+						<div class="player__controls">
+							<img src="media/play.png" alt="play song" id="playIcon">
+							<audio id="mySong">
+								<source src="media/song-audio.mp3" type="audio/mp3">
+							</audio>
+						</div>
+						<div class="player__song"></div>
+					</div>
+				</div>
+				<div class="main-history__left__down">
+					<div class="text">
+						<h1 class="text__title">Кантемирова (Шекерова) Олена Павлівна</h1>
+						<hr class="sep" />
+						<p class="text__desc" id="example" style="display: none;">
+							Как только немцы вошли, они сразу – «цигойнер» и поставили не то,
+							чтобы сказать вам, что поставили охрану – нет. Но уже было над нами
+							и над евреями, мгновенно они собрали… Нас они не собрали,
+							а сказали никуда не выходить – будет идти регистрация.
+							Тем детям, у которых отец был еврей, а мать русская,
+							или наоборот – на груди поцепили голубые звезды.
+							По-моему, шесть углов было у этой звезды.
+							У нас, например, в Каховке я видела на груди эти звезды.
+							А таких евреев уже…
+							Никуда… Собирали… На перерегистрацию и вели моих друзей и меня с ними.
+							Меня забрали от ихнего до… со двора. Когда пришли их забирать,
+							мы были во дворе, играли. Вы понимаете, это ж не то шо…
+							Ну от как с соседом.
+							И тем более у нас было… Не было ни заборов, ничего.
+							Мы жили как одна семья. И меня взяли с ними вместе.
+							Евреев повели на расстрел. И меня с ними вместе.
+							Ну я прошла, еще до угла не дошла – полицейский…
+							Ну они ж выросли с моими братьями вместе,
+							и он меня выхватывает с этой [толпы]… Там пыль,
+							то есть мы ж шли все вместе и я с детями, со своей
+							подругой Лилей за руку держалась. Он меня выхватывает и говорит:
+							«ты куда идешь, Лена?» А я говорю: «С Лилей».
+							Он говорит: «Щас же иди домой!» И берет,
+							набрасывает на меня какой-то жакет…
+							И крикнул мне: «Быстро уходи отсюда».
+							И я убежала, убежала во двор.
+							Конечно, родители не выходили.
+							Я уже сама забежала во двор и там мгновенно я зашла в комнату и
+							больше мы не выходили. Соседи сказали, что не выходите никуда.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="main-history__right">
+				<div class="main-history__right__img">
+					<img src="img/history/frame.png" alt="frame" class="frame">
+					<img src="img/history/1.png" alt="girl in a jacket" class="hidden-img-1">
+					<img src="img/history/2.png" alt="girl in a jacket" class="hidden-img-2">
+					<img src="img/history/3.png" alt="peaple" class="hidden-img-3">
+					<img src="img/history/4.png" alt="peaple" class="hidden-img-4">
+					<!-- <img src="img/history/3.png" alt="girl and peaple"> -->
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="footer__copyright">
+				<span>© 2021 History-1. All rights reserved</span>
+			</div>
+			<div class="footer__we">
+				<span>Зроблено силами
+					<b>
+						Kulynych V.</b>
+				</span>
+				<img src="img/otakoyi.png" alt="otakoyi">
+
+			</div>
+		</footer>
+		<div class="angles">
+			<span class="angles__left-top"></span>
+			<span class="angles__left-bottom"></span>
+			<span class="angles__right-top"></span>
+			<span class="angles__right-bottom"></span>
+		</div>
+	</div>
+	<script src="libs/js/jquery.min.js"></script>
+	<script src="js/first-paragraph.js"></script>
+	<script src="js/media.js"></script>
+
+</body>
+
+</html>

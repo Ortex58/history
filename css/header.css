@@ -2,10 +2,12 @@
   display: flex;
   justify-content: space-between;
   max-width: 1920px;
-  margin: 18px auto 0 auto;
-  padding: 0 15px;
+  padding: 20px 23px;
   min-height: 68px;
-  position: relative;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0px;
   z-index: 1; }
   .header__logo a {
     max-width: 231px;
