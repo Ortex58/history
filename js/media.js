@@ -1,4 +1,3 @@
-let mainSong = document.querySelector('.main__song');
 let mySong = document.getElementById('mySong');
 let iconSong = document.getElementById('playIcon');
 let equalizer = document.querySelector('.main-history__equalizer');
@@ -6,13 +5,6 @@ let equalizer = document.querySelector('.main-history__equalizer');
 let toSlide = $('.go-to-slide');
 
 var play = true
-window.onload = function() {
-	mainSong.play();
-	mainSong.muted = false;
-	mainSong.volume = 0.1;
-};
-
-
 
 iconSong.onclick = function () {
 	if (mySong.paused) {
