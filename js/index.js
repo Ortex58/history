@@ -14,9 +14,18 @@ $(document).ready(function () {
     });
 
     //Burger open, close
-    $(".sandwich, .menu_item").click(function () {
+    $(".sandwich").click(function () {
         $(".sandwich").toggleClass("active");
+        if (!$(".header__nav").hasClass( "animate__fadeInLeft" )) {
+            $(".header__nav").addClass('animate__fadeInLeft');
+            $(".header__nav").removeClass('animate__fadeOutLeft');
+        }
+        else {
+            $(".header__nav").removeClass('animate__fadeInLeft');
+            $(".header__nav").addClass('animate__fadeOutLeft');
+        }
     });
+    
 
     //show menu click
     $(".header__menu__btn").click(function () {
@@ -44,5 +53,6 @@ $(document).ready(function () {
     $(function () {
         $("#datepicker").datepicker();
     });
+
     
 });

@@ -1,0 +1,115 @@
+@media only screen and (max-width: 1201px) {
+  body {
+    position: absolute;
+    background-size: auto; }
+  .header {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    bottom: 0; }
+    .header__logo a {
+      text-align: center;
+      transition: ease 0.2s, -webkit-transform 0.5s;
+      transition: transform 0.5s, ease 0.2s;
+      transition: transform 0.5s, ease 0.2s, -webkit-transform 0.5s;
+      font-size: 2.4em; }
+      .header__logo a:hover {
+        opacity: 0.7; }
+    .header__nav {
+      width: 100%;
+      justify-content: flex-start;
+      flex-direction: unset;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      height: 100%;
+      left: 0;
+      z-index: 10;
+      background-color: bisque;
+      opacity: 0; }
+      .header__nav__nav1 {
+        width: 100%; }
+        .header__nav__nav1 ul {
+          flex-direction: column;
+          align-items: center; }
+          .header__nav__nav1 ul li {
+            padding: 15px; }
+            .header__nav__nav1 ul li .divider {
+              font-size: 3em;
+              line-height: 34px; }
+            .header__nav__nav1 ul li a {
+              font-weight: 500;
+              font-size: 3em;
+              line-height: 34px;
+              transition: ease 0.2s, -webkit-transform 0.5s;
+              transition: transform 0.5s, ease 0.2s;
+              transition: transform 0.5s, ease 0.2s, -webkit-transform 0.5s; }
+              .header__nav__nav1 ul li a::after {
+                content: unset; }
+              .header__nav__nav1 ul li a:hover {
+                opacity: 0.7;
+                transition: ease 0.2s, -webkit-transform 0.5s;
+                transition: transform 0.5s, ease 0.2s;
+                transition: transform 0.5s, ease 0.2s, -webkit-transform 0.5s; }
+    .header__burger {
+      color: #343434;
+      display: block;
+      cursor: pointer;
+      z-index: 11; }
+    .header.mobile {
+      height: 100px; }
+  .main-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10; }
+  .outerbutton {
+    position: fixed;
+    height: 100vh;
+    width: 100vw; }
+    .outerbutton .btn {
+      font-size: 2em; }
+  .main-history {
+    flex-direction: column;
+    padding: 0 15px;
+    margin: 0; }
+    .main-history__left {
+      width: 100%; }
+      .main-history__left__down {
+        padding: 0; }
+    .main-history__right {
+      width: 100%; }
+      .main-history__right__img {
+        width: 100px;
+        height: 320px; }
+        .main-history__right__img .hidden-img-1, .main-history__right__img .hidden-img-2 {
+          width: 100px; }
+        .main-history__right__img .hidden-img-3 {
+          width: 100px; }
+        .main-history__right__img .hidden-img-4 {
+          width: 100px; }
+  .text {
+    min-height: 20px;
+    display: block; }
+    .text .sep {
+      width: 3em; }
+    .text__desc {
+      text-align: center; }
+    .text__button--next {
+      display: block;
+      margin: 25px auto; }
+  .first-paragraph,
+  .second-paragraph {
+    max-width: 100%;
+    position: relative;
+    top: 20%;
+    left: auto;
+    -webkit-transform: unset;
+    transform: unset;
+    padding: 0 15px; }
+  .footer {
+    flex-direction: column; } }

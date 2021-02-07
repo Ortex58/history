@@ -1,3 +1,8 @@
+/* VAL */
+$main-color-text: #343434;
+.hide {
+  display: none;
+}
 body {
   font-style: normal;
   -ms-text-size-adjust: 100%;
@@ -7,7 +12,7 @@ body {
   text-rendering: optimizeLegibility;
   line-height: 1.5;
   background-color: #222222;
-  background-image: url("../img/Barrack-Street.jpg");
+  background-image: url("../img/history/bg-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;

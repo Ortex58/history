@@ -12,14 +12,15 @@ let slderHistory = $('.slider-history');
 
 $(document).ready(function () {
   startBtn.click(function() {
-    mainSong.play();
-    mainSong.muted = false;
-    mainSong.volume = 0.1;
+    // mainSong.play();
+    // mainSong.muted = false;
+    // mainSong.volume = 0.1;
     $(this).addClass('animate__backOutUp');
     setTimeout(function () {
       overlay.addClass('animate__fadeOutLeft');
       firstParagraph.slideToggle(6500);
     }, 3100);
+    $('.header').addClass('mobile');
   });
   btnNext.click(function () {
     firstParagraph.slideToggle(2500);
