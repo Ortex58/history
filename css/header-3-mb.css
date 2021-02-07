@@ -1,0 +1,28 @@
+@media only screen and (max-width: 1201px) {
+  body {
+    background-image: url("../img/history/bg-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; } }
+
+@media only screen and (max-width: 1025px) {
+  .header-3 {
+    flex-direction: row-reverse; }
+    .header-3__nav {
+      position: fixed;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rosybrown;
+      opacity: .7; }
+      .header-3__nav ul {
+        position: relative;
+        top: 50%;
+        flex-direction: column;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%); }
+        .header-3__nav ul li {
+          margin-right: 0; }
+          .header-3__nav ul li a {
+            font-size: 3em;
+            line-height: 1; } }

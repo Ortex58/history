@@ -68,7 +68,8 @@ $main-color-text: #343434;
       z-index: 11;
     }
     &.mobile {
-      height: 100px;
+      height: 100%;
+      z-index: 2;
     }
   }
   .main-wrapper {
@@ -77,7 +78,7 @@ $main-color-text: #343434;
     bottom: 0;
     right: 0;
     left: 0;
-    z-index: 10;
+    z-index: 2;
   }
   .outerbutton {
     position: fixed;

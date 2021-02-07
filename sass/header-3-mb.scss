@@ -1,0 +1,39 @@
+$main-color-text: #343434;
+@media only screen and (max-width: 1201px) {
+  body {
+    background-image: url("../img/history/bg-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .header-3 {
+    flex-direction: row-reverse;
+    &__nav {
+      position: fixed;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rosybrown;
+      opacity: .7;
+      ul {
+        position: relative;
+        top: 50%;
+        flex-direction: column;
+        transform: translateY(-50%);
+        li {
+          margin-right: 0;
+          a {
+            font-size: 3em;
+            line-height: 1;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 450px) {
+ 
+}
