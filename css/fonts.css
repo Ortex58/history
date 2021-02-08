@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
 @font-face {
   font-family: "Autogate Rough";
   src: url("../font/autogate-sans-rough.ttf"); }
@@ -6,5 +7,9 @@
   font-family: "Roboto Condensed.ttf";
   src: url("../font/RobotoCondensed-Regular.ttf"); }
 
+/*@font-face {
+  font-family: "Italianno";
+  src: url('../font/Italianno-Regular.ttf');
+}*/
 /*@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto+Mono&display=swap');*/

@@ -1,0 +1,38 @@
+.paragraph {
+  margin-top: 100px; }
+  .paragraph__first {
+    max-width: 50%;
+    margin: 0 auto; }
+  .paragraph .text__title {
+    font-family: "Cutive Mono";
+    font-size: 1.4em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #343434;
+    text-align: center; }
+  .paragraph .text__desc {
+    font-family: 'Italianno', cursive;
+    font-size: 1.2em;
+    margin: 23px auto 0 auto;
+    line-height: 1.3;
+    letter-spacing: 1.5px;
+    white-space: normal;
+    color: #343434;
+    font-style: italic; }
+  .paragraph .text__button--next {
+    color: #343434;
+    font-weight: 900;
+    position: relative;
+    font-family: "Cutive Mono", monospace;
+    margin-top: 25px;
+    cursor: pointer; }
+    .paragraph .text__button--next .fa-arrow-right {
+      position: absolute;
+      top: 1px;
+      right: -15px;
+      transition: all 0.5s ease 0.1s; }
+    .paragraph .text__button--next:hover .fa-arrow-right {
+      right: -20px; }
+    .paragraph .text__button--next:hover {
+      opacity: .7; }

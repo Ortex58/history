@@ -1,0 +1,21 @@
+@media only screen and (max-width: 769px) {
+  .paragraph {
+    margin-top: 30px; }
+    .paragraph__first, .paragraph__second {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 85%; }
+    .paragraph .text__desc {
+      text-align: center; }
+    .paragraph .text__button--next {
+      margin: 25px auto 0 auto; } }
+
+@media only screen and (max-width: 450px) {
+  .paragraph {
+    margin-top: 25px; }
+    .paragraph__first, .paragraph__second {
+      max-width: 95%; }
+    .paragraph .text__desc {
+      text-align: center;
+      max-width: 100%; } }

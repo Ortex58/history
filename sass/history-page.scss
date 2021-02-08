@@ -3,21 +3,11 @@ $color-equalizer: #fff;
 $foto-frame-color: rgba(52,52,52,1);
 $main-color-text: #343434;
 /*first-paragraph*/
-.first-paragraph, .second-paragraph {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  max-width: 40%;
-  // transition: all 3s ease .5s;
-}
 .main-history {
-  padding: 0 23px;
-  margin: 150px 0 0 0;
+  padding: 0 15px;
   position: relative;
   z-index: 1;
-  display: flex;
+  display: none;
   justify-content: space-between;
   opacity: 0;
   transition: all 1.5s ease 0.5s;
@@ -31,6 +21,79 @@ $main-color-text: #343434;
     &__down {
       margin: 50px 0 0 0;
       padding: 0 80px;
+      .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 400px;
+        padding-bottom: 50px;
+        &__title {
+          font-family: "Cutive Mono", monospace;
+          font-size: 1.4em;
+          font-weight: 500;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          /*text-shadow: white -1px 1px;*/
+          color: $main-color-text;
+          text-align: center;
+        }
+        .sep {
+          border: 0;
+          width: 32em;
+          height: 2px;
+          margin: 0 auto;
+          background-color: rgba(255, 255, 255, 1);
+        }
+        &__desc {
+          font-family: "Cutive Mono", monospace;
+          font-size: 1.2em;
+          margin: 23px auto 0 auto;
+          line-height: 1.3;
+          letter-spacing: 1.5px;
+          white-space: normal;
+          color: $main-color-text;
+        }
+        &__button {
+          &--next {
+            color: $main-color-text;
+            font-weight: 900;
+            position: relative;
+            font-family: "Cutive Mono", monospace;
+            margin-top: 25px;
+            cursor: pointer;
+            .fa-arrow-right {
+              position: absolute;
+              top: 1px;
+              right: -20px;
+              transition: all 0.5s ease 0.1s;
+            }
+            &.go-to-slide {
+              opacity: 0;
+              z-index: 0;
+              &.show {
+                opacity: 1;
+                z-index: 5;
+                text-align: left;
+                width: 170px;
+                .fa-arrow-right {
+                  right: unset;
+                  margin-left: 10px;
+                }
+                &:hover {
+                  .fa-arrow-right {
+                    margin-left: 15px;
+                  }
+                }
+              }
+            }
+          }
+          &:hover {
+            .fa-arrow-right {
+              right: -30px;
+            }
+          }
+        }
+      }
     }
   }
   &__right {
@@ -42,6 +105,8 @@ $main-color-text: #343434;
       margin: 0 auto;
       z-index: 5;
       height: 650px;
+      overflow: hidden;
+      border: 2px solid black;
       .frame {
         position: relative;
         width: 100%;
@@ -123,79 +188,7 @@ $main-color-text: #343434;
     }
   }
 }
-.text {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  min-height: 400px;
-  padding-bottom: 50px;
-  &__title {
-    font-family: "Cutive Mono", monospace;
-    font-size: 1.4em;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    /*text-shadow: white -1px 1px;*/
-    color: $main-color-text;
-    text-align: center;
-  }
-  .sep {
-    border: 0;
-    width: 32em;
-    height: 2px;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 1);
-  }
-  &__desc {
-    font-family: "Cutive Mono", monospace;
-    font-size: 1.2em;
-    margin: 23px auto 0 auto;
-    line-height: 1.3;
-    letter-spacing: 1.5px;
-    white-space: normal;
-    color: $main-color-text;
-  }
-  &__button {
-    &--next {
-      color: $main-color-text;
-      font-weight: 900;
-      position: relative;
-      font-family: "Cutive Mono", monospace;
-      margin-top: 25px;
-      cursor: pointer;
-      .fa-arrow-right {
-        position: absolute;
-        top: 1px;
-        right: -20px;
-        transition: all 0.5s ease 0.1s;
-      }
-      &.go-to-slide {
-        opacity: 0;
-        z-index: 0;
-        &.show {
-          opacity: 1;
-          z-index: 5;
-          text-align: left;
-          width: 170px;
-          .fa-arrow-right {
-            right: unset;
-            margin-left: 10px;
-          }
-          &:hover {
-            .fa-arrow-right {
-              margin-left: 15px;
-            }
-          }
-        }
-      }
-    }
-    &:hover {
-      .fa-arrow-right {
-        right: -30px;
-      }
-    }
-  }
-}
+
 .main {
   &__audio {
     position: relative;
