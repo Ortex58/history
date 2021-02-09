@@ -1,6 +1,6 @@
 let mySong = document.getElementById('mySong');
 let iconSong = document.getElementById('playIcon');
-let equalizer = document.querySelector('.main-history__equalizer');
+let equalizer = document.querySelector('.equalizer');
 
 let toSlide = $('.go-to-slide');
 
@@ -10,7 +10,7 @@ iconSong.onclick = function () {
 	if (mySong.paused) {
 		mySong.play();
 		mySong.volume = 0.3;
-		iconSong.src = "media/pause.png"
+		iconSong.src = "media/pause-button.png"
 		equalizer.classList.add("show");
 		
 		if (play) {
@@ -18,25 +18,25 @@ iconSong.onclick = function () {
 			$('#example').animate_Text(play);
 		}
 		// fadIn in images
-		$(".hidden-img-1").fadeIn(5000);
-		setTimeout(function () {
-			$(".hidden-img-2").css('display', 'inline');
-		}, 5000);
-		setTimeout(function () {
-			$(".hidden-img-3").addClass('show-people');
-		}, 10000);
-		setTimeout(function () {
-			$(".hidden-img-4").addClass('show-people');
-		}, 15000);
+		// $(".hidden-img-1").fadeIn(5000);
+		// setTimeout(function () {
+		// 	$(".hidden-img-2").css('display', 'inline');
+		// }, 5000);
+		// setTimeout(function () {
+		// 	$(".hidden-img-3").addClass('show-people');
+		// }, 10000);
+		// setTimeout(function () {
+		// 	$(".hidden-img-4").addClass('show-people');
+		// }, 15000);
 
 	} else {
 		mySong.pause();
-		iconSong.src = "media/play.png"
+		iconSong.src = "media/play-button.png"
 		equalizer.classList.remove("show");
 	}
 }
 mySong.onended = function() {
-	iconSong.src = "media/play.png"
+	iconSong.src = "media/play-button.png"
 	equalizer.classList.remove("show");
 	toSlide.addClass('show');
 };
@@ -51,3 +51,4 @@ $.fn.animate_Text = function () {
 		});
 	});
 };
+

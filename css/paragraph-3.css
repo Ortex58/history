@@ -1,6 +1,5 @@
 .paragraph {
   position: relative;
-  margin-top: 100px;
   z-index: 2; }
   .paragraph__first, .paragraph__second {
     max-width: 50%;

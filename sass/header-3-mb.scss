@@ -17,6 +17,9 @@ $main-color-text: #343434;
     }
     &__logo {
       z-index: 100;
+      a {
+        font-size: 0.9em;
+      }
     }
     &__nav {
       width: 100%;

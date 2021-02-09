@@ -1,0 +1,22 @@
+.paragraph.paragraph-scroll {
+  padding: 0 30px;
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center; }
+  .paragraph.paragraph-scroll .paragraph__third .paragraph-scroll--title {
+    font-size: 2em;
+    font-family: "Roboto Condensed",Helvetica,Arial,sans-serif; }
+
+.paragraph .sources {
+  text-align: left;
+  margin-top: 50px; }
+  .paragraph .sources--title {
+    text-align: center;
+    font-family: "Roboto Condensed",Helvetica,Arial,sans-serif; }
+  .paragraph .sources ol {
+    font-family: "Roboto Condensed",Helvetica,Arial,sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0; }
+  .paragraph .sources--btn {
+    margin: 25px auto 0 auto; }

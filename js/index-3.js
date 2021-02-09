@@ -4,13 +4,16 @@ $(".sandwich").click(function () {
   if (!$(".header-3__nav").hasClass( "animate__fadeInLeft" )) {
       $(".header-3__nav").addClass('animate__fadeInLeft');
       $(".header-3__nav").removeClass('animate__fadeOutLeft');
+      $('.header-3').addClass('open');
   }
   else {
       $(".header-3__nav").removeClass('animate__fadeInLeft');
       $(".header-3__nav").addClass('animate__fadeOutLeft');
+      $('.header-3').removeClass('open');
   }
 });
 
+let mainSong = document.querySelector('.main__song');
 let firstParagraph = $('.paragraph__first');
 let secondParagraph = $('.paragraph__second');
 let mainHistory = $('.main-history');
@@ -20,6 +23,9 @@ let btnEnd = $('.end-btn');
 let overlay = $('.outerbutton');
 $(document).ready(function () {
   startBtn.click(function() {
+    mainSong.play();
+    mainSong.muted = false;
+    mainSong.volume = 0.1;
     $(this).addClass('animate__backOutUp');
     setTimeout(function () {
       overlay.addClass('animate__fadeOutLeft');
@@ -43,3 +49,23 @@ $(document).ready(function () {
 });
 
 
+// Volume main song
+let volume = $('.volume');
+let volume_aloud = $('.volume__aloud');
+let volume_mute = $('.volume__mute');
+volume_mute.hide();
+volume.on('click', function() {
+	if (volume_aloud.hasClass("active")) {
+		volume_aloud.hide();
+		volume_mute.show();
+		volume_aloud.toggleClass('active')
+		volume_mute.toggleClass('active')
+    mainSong.muted = true;
+	} else {
+		volume_mute.hide();
+		volume_aloud.show();
+		volume_aloud.toggleClass('active')
+		volume_mute.toggleClass('active')
+    mainSong.muted = false;
+	}
+});

@@ -14,6 +14,8 @@
       z-index: 100; }
     .header-3__logo {
       z-index: 100; }
+      .header-3__logo a {
+        font-size: 0.9em; }
     .header-3__nav {
       width: 100%;
       position: fixed;

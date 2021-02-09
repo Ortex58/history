@@ -1,7 +1,13 @@
 .header-3 {
   padding: 15px 30px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0; }
+  .header-3.open {
+    z-index: 99; }
   .header-3__burger {
     position: absolute;
     top: 32px;

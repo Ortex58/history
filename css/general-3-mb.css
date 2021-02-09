@@ -2,8 +2,13 @@
   body {
     background-image: url("../img/history/bg-1.jpg");
     background-size: cover;
-    background-repeat: no-repeat; } }
+    background-repeat: no-repeat;
+    padding-bottom: 100px; } }
+
+@media only screen and (max-width: 1025px) {
+  body {
+    padding-bottom: 80px; } }
 
 @media only screen and (max-width: 450px) {
-  background-size: 100% 100%;
-  height: 100vh; }
+  body {
+    padding-bottom: 50px; } }
