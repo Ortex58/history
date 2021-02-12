@@ -1,7 +1,7 @@
 let mySong = document.getElementById('mySong');
 let iconSong = document.getElementById('playIcon');
 let equalizer = document.querySelector('.equalizer');
-
+let btnMainStory = document.querySelector('.text__button--next');
 let toSlide = $('.go-to-slide');
 
 var play = true
@@ -39,6 +39,7 @@ mySong.onended = function() {
 	iconSong.src = "media/play-button.png"
 	equalizer.classList.remove("show");
 	toSlide.addClass('show');
+	btnMainStory.addClass('show');
 };
 $.fn.animate_Text = function () {
 	var string = this.text();

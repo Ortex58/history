@@ -20,11 +20,13 @@ let mainHistory = $('.main-history');
 let startBtn = $('.outerbutton .btn');
 let btnNext = $('.next-btn');
 let btnEnd = $('.end-btn');
+let btnSources = $('.sources--btn');
+let sources = $('.sources');
 let overlay = $('.outerbutton');
 $(document).ready(function () {
   startBtn.click(function() {
     mainSong.play();
-    mainSong.muted = false;
+    mainSong.muted = true;
     mainSong.volume = 0.1;
     $(this).addClass('animate__backOutUp');
     setTimeout(function () {
@@ -45,6 +47,14 @@ $(document).ready(function () {
       mainHistory.css('opacity', '1');
       mainHistory.css('display', 'flex');
     }, 2600);
+  });
+  
+   // Open Sources
+   btnSources.click(function () {
+    setTimeout(function () {
+      sources.slideToggle(2500);
+      btnSources.hide();
+    }, 500);
   });
 });
 

@@ -53,8 +53,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 140px;
-  height: 50px;
+  padding: 15px 20px;
   border: 2px solid var(--base-color);
   font-size: 1rem;
   cursor: pointer; }
@@ -769,3 +768,19 @@ body {
     padding: 0; }
   .paragraph .sources--btn {
     margin: 25px auto 0 auto; }
+
+@media only screen and (max-width: 1025px) {
+  .paragraph.paragraph-scroll {
+    margin-top: -70px; } }
+
+@media only screen and (max-width: 450px) {
+  .paragraph.paragraph-scroll {
+    margin-top: -105px;
+    padding: 0 15px; }
+    .paragraph.paragraph-scroll .paragraph__third .paragraph-scroll--title {
+      font-size: 1.2em; }
+    .paragraph.paragraph-scroll .paragraph__third .sources {
+      padding: 0 35px;
+      font-size: 0.7em; }
+    .paragraph.paragraph-scroll .paragraph-scroll--desc {
+      font-size: 1em; } }
