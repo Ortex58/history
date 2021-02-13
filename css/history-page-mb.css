@@ -1,3 +1,7 @@
-.main-history {
-  flex-direction: column;
-  color: red; }
+@media only screen and (max-width: 1025px) {
+  .main-history__left {
+    padding-bottom: 30px; } }
+
+@media only screen and (max-width: 450px) {
+  .main-history__left {
+    min-height: 1370px; } }

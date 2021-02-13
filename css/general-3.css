@@ -18,11 +18,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   line-height: 1.5;
-  background-color: #222222;
+  background-color: #e4db8f;
   background-image: url("../img/history/bg-1.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding: 100px 0;
   min-height: 100vh; }
   body ul {
     padding: 0; }
@@ -154,7 +153,7 @@ body {
     background-color: #343434; }
 
 .outerbutton {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;

@@ -2,6 +2,7 @@ $main-color-text: #343434;
 .paragraph {
   position: relative;
   z-index: 2;
+  margin-top: 250px;
   &__first, &__second {
     max-width: 50%;
     margin: 0 auto;

@@ -22,7 +22,8 @@
       left: 0;
       top: 0;
       height: 100%;
-      background-color: #e5de9e;
+      background: #e4db8f;
+      background: linear-gradient(122deg, #e4db8f 0%, #c7d9f1 35%, #f03734 100%);
       opacity: 0;
       z-index: 1; }
       .header-3__nav ul {

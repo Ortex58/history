@@ -5,9 +5,11 @@ $main-color-text: #343434;
   padding: 0 15px;
   position: relative;
   z-index: 0;
-  display: none;
+  /*display: none;*/
+  display: flex;
   justify-content: space-between;
-  opacity: 0;
+  /*opacity: 0;*/
+  opacity: 1;
   transition: all 1.5s ease 0.5s;
   @media only screen and (max-width: 1025px) {
     flex-direction: column-reverse
@@ -21,6 +23,21 @@ $main-color-text: #343434;
     &__up {
       display: flex;
       justify-content: center;
+      .player {
+        &__controls {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        &__text {
+          font-family: "Cutive Mono";
+          font-size: 0.8em;
+          font-weight: 600;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          margin-top: 10px;
+        }
+      }
     }
     &__down {
       margin: 25px 0 0 0;
@@ -111,7 +128,7 @@ $main-color-text: #343434;
     }
   }
   &__right {
-    width: 50%;
+    width: 40%;
     display: flex;
     @media only screen and (max-width: 1201px) {
       width: 40%;
@@ -137,18 +154,22 @@ $main-color-text: #343434;
       }
       
       .hidden-img-1, .hidden-img-2 {
-        top: 95px;
-        left: 46px;
-        width: 355px;
-        opacity: 0.6;
+        top: 150%;
+        left: 50%;
+        width: 100%;
         position: absolute;
-        display: none;
+        transform: translate(-50%, -50%);
         z-index: 5;
+        --animate-duration: 6s;
+        animation-delay: 1s;
+        &.show {
+          top: 50%;
+        }
       }
       .hidden-img-3 {
         top: 95px;
         left: 46px;
-        width: 355px;
+        width: 100%;
         opacity: 0;
         z-index: 5;
         position: absolute;

@@ -2,13 +2,9 @@
   body {
     background-image: url("../img/history/bg-1.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    padding-bottom: 100px; } }
-
-@media only screen and (max-width: 1025px) {
-  body {
-    padding-bottom: 80px; } }
+    background-repeat: no-repeat; } }
 
 @media only screen and (max-width: 450px) {
   body {
-    padding-bottom: 50px; } }
+    background: #e4db8f;
+    background: linear-gradient(122deg, #f03734 0%, #c7d9f1 35%, #e4db8f 100%); } }

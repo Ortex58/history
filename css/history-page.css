@@ -3,9 +3,11 @@
   padding: 0 15px;
   position: relative;
   z-index: 0;
-  display: none;
+  /*display: none;*/
+  display: flex;
   justify-content: space-between;
-  opacity: 0;
+  /*opacity: 0;*/
+  opacity: 1;
   transition: all 1.5s ease 0.5s; }
   @media only screen and (max-width: 1025px) {
     .main-history {
@@ -19,6 +21,17 @@
     .main-history__left__up {
       display: flex;
       justify-content: center; }
+      .main-history__left__up .player__controls {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+      .main-history__left__up .player__text {
+        font-family: "Cutive Mono";
+        font-size: 0.8em;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-top: 10px; }
     .main-history__left__down {
       margin: 25px 0 0 0;
       padding: 0 80px; }
@@ -89,7 +102,7 @@
         .main-history__left__down .text__button:hover .fa-arrow-right {
           right: -30px; }
   .main-history__right {
-    width: 50%;
+    width: 40%;
     display: flex; }
     @media only screen and (max-width: 1201px) {
       .main-history__right {
@@ -114,17 +127,22 @@
           width: 260px;
           height: 368px; } }
       .main-history__right__img .hidden-img-1, .main-history__right__img .hidden-img-2 {
-        top: 95px;
-        left: 46px;
-        width: 355px;
-        opacity: 0.6;
+        top: 150%;
+        left: 50%;
+        width: 100%;
         position: absolute;
-        display: none;
-        z-index: 5; }
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        --animate-duration: 6s;
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s; }
+        .main-history__right__img .hidden-img-1.show, .main-history__right__img .hidden-img-2.show {
+          top: 50%; }
       .main-history__right__img .hidden-img-3 {
         top: 95px;
         left: 46px;
-        width: 355px;
+        width: 100%;
         opacity: 0;
         z-index: 5;
         position: absolute; }

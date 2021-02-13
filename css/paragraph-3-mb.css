@@ -1,6 +1,10 @@
+@media only screen and (max-width: 1025px) {
+  .paragraph {
+    margin-top: 180px; } }
+
 @media only screen and (max-width: 769px) {
   .paragraph {
-    margin-top: 30px; }
+    margin-top: 130px; }
     .paragraph__first, .paragraph__second {
       display: flex;
       flex-direction: column;
@@ -13,13 +17,12 @@
 
 @media only screen and (max-width: 450px) {
   .paragraph {
-    margin-top: 25px; }
+    margin-top: 100px; }
     .paragraph__first, .paragraph__second {
       max-width: 95%; }
+    .paragraph .text__title {
+      font-size: 1em; }
     .paragraph .text__desc {
       text-align: center;
-      max-width: 100%; } }
-
-@media only screen and (max-width: 1025px) {
-  .paragraph {
-    margin-top: 125px; } }
+      max-width: 100%;
+      font-size: 0.9em; } }

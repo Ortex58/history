@@ -12,12 +12,14 @@ iconSong.onclick = function () {
 		mySong.volume = 0.3;
 		iconSong.src = "media/pause-button.png"
 		equalizer.classList.add("show");
+		$(".player__text").last().html('Зупинити Аудіо текст');
 		
 		if (play) {
 			$('#example').show();
 			$('#example').animate_Text(play);
 		}
 		// fadIn in images
+		$('.hidden-img-1').show().addClass('show animate__fadeInUp');
 		// $(".hidden-img-1").fadeIn(5000);
 		// setTimeout(function () {
 		// 	$(".hidden-img-2").css('display', 'inline');
@@ -33,6 +35,7 @@ iconSong.onclick = function () {
 		mySong.pause();
 		iconSong.src = "media/play-button.png"
 		equalizer.classList.remove("show");
+		$(".player__text").last().html('Аудіо текст');
 	}
 }
 mySong.onended = function() {

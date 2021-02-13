@@ -1,0 +1,17 @@
+@media only screen and (max-width: 1201px) {
+
+}
+@media only screen and (max-width: 1025px) {
+  .main-history {
+    &__left {
+      padding-bottom: 30px;
+    }
+  }
+}
+@media only screen and (max-width: 450px) {
+  .main-history {
+    &__left {
+      min-height: 1370px;
+    }
+  }
+}
