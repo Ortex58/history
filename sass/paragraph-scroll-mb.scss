@@ -1,14 +1,21 @@
 @media only screen and (max-width: 1025px) {
   .paragraph {
     &.paragraph-scroll {
-      margin-top: -70px;
+      margin-top: 180px;
+    }
+  }
+}
+@media only screen and (max-width: 769px) {
+  .paragraph {
+    &.paragraph-scroll {
+      margin-top: 100px;
     }
   }
 }
 @media only screen and (max-width: 450px) {
   .paragraph {
     &.paragraph-scroll {
-      margin-top: -105px;
+      margin-top: 125px;
       padding: 0 15px;
       .paragraph__third {
         .paragraph-scroll--title {

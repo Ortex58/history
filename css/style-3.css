@@ -259,7 +259,8 @@ body {
   position: fixed;
   right: 0;
   left: 0;
-  top: 0; }
+  top: 0;
+  z-index: 101; }
   .header-3.open {
     z-index: 99; }
   .header-3__burger {
@@ -797,11 +798,15 @@ body {
 
 @media only screen and (max-width: 1025px) {
   .paragraph.paragraph-scroll {
-    margin-top: -70px; } }
+    margin-top: 180px; } }
+
+@media only screen and (max-width: 769px) {
+  .paragraph.paragraph-scroll {
+    margin-top: 100px; } }
 
 @media only screen and (max-width: 450px) {
   .paragraph.paragraph-scroll {
-    margin-top: -105px;
+    margin-top: 125px;
     padding: 0 15px; }
     .paragraph.paragraph-scroll .paragraph__third .paragraph-scroll--title {
       font-size: 1.2em; }
