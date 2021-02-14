@@ -259,8 +259,7 @@ body {
   position: fixed;
   right: 0;
   left: 0;
-  top: 0;
-  z-index: 101; }
+  top: 0; }
   .header-3.open {
     z-index: 99; }
   .header-3__burger {
@@ -495,7 +494,7 @@ body {
 
 @media only screen and (max-width: 769px) {
   .paragraph {
-    margin-top: 130px; }
+    margin-top: 160px; }
     .paragraph__first, .paragraph__second {
       display: flex;
       flex-direction: column;
@@ -508,7 +507,7 @@ body {
 
 @media only screen and (max-width: 450px) {
   .paragraph {
-    margin-top: 100px; }
+    margin-top: 130px; }
     .paragraph__first, .paragraph__second {
       max-width: 95%; }
     .paragraph .text__title {

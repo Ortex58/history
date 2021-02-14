@@ -52,7 +52,7 @@ $(document).ready(function () {
   });
 // Open Scroll page
   btnToScrollPage.click(function () {
-    console.log("hello");
+    
     mainHistory.css('opacity', '1');
     mainHistory.slideToggle(2500);
     setTimeout(function () {

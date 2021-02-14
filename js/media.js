@@ -2,7 +2,7 @@ let mySong = document.getElementById('mySong');
 let iconSong = document.getElementById('playIcon');
 let equalizer = document.querySelector('.equalizer');
 let btnMainStory = document.querySelector('.text__button--next');
-let toSlide = $('.go-to-slide');
+let btnToScrollPage1 = $('.go-to-scroll-page');
 
 var play = true
 
@@ -47,6 +47,10 @@ mySong.onended = function() {
 	equalizer.classList.remove("show");
 	btnMainStory.addClass('show');
 };
+btnToScrollPage1.click(function () {
+	mySong.pause();
+	equalizer.classList.remove("show");
+});
 $.fn.animate_Text = function () {
 	var string = this.text();
 	return this.each(function () {

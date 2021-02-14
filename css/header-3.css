@@ -5,8 +5,7 @@
   position: fixed;
   right: 0;
   left: 0;
-  top: 0;
-  z-index: 101; }
+  top: 0; }
   .header-3.open {
     z-index: 99; }
   .header-3__burger {
