@@ -18,18 +18,22 @@ iconSong.onclick = function () {
 			$('#example').show();
 			$('#example').animate_Text(play);
 		}
-		// fadIn in images
-		$('.hidden-img-1').show().addClass('show animate__fadeInUp');
-		// $(".hidden-img-1").fadeIn(5000);
-		// setTimeout(function () {
-		// 	$(".hidden-img-2").css('display', 'inline');
-		// }, 5000);
-		// setTimeout(function () {
-		// 	$(".hidden-img-3").addClass('show-people');
-		// }, 10000);
-		// setTimeout(function () {
-		// 	$(".hidden-img-4").addClass('show-people');
-		// }, 15000);
+		// fadeInUp img-1 in images
+		setTimeout(function () {
+			$('.hidden-img-1').show().addClass('animate__fadeInUp');		
+		}, 1000);
+		setTimeout(function () {
+			$('.hidden-img-2').show().addClass('animate__fadeInUp');		
+		}, 4000);
+		setTimeout(function () {
+			$('.hidden-img-3').show().addClass('animate__fadeInUp');		
+		}, 8000);
+		setTimeout(function () {
+			$('.hidden-img-4').show().addClass('animate__fadeInUp');		
+		}, 12000);
+		setTimeout(function () {
+			$('.hidden-img-5').show().addClass('animate__fadeInDown');		
+		}, 16000);
 
 	} else {
 		mySong.pause();
@@ -41,7 +45,6 @@ iconSong.onclick = function () {
 mySong.onended = function() {
 	iconSong.src = "media/play-button.png"
 	equalizer.classList.remove("show");
-	toSlide.addClass('show');
 	btnMainStory.addClass('show');
 };
 $.fn.animate_Text = function () {

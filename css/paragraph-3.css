@@ -5,7 +5,8 @@
   .paragraph__first, .paragraph__second {
     max-width: 50%;
     margin: 0 auto;
-    display: none; }
+    display: none;
+    position: relative; }
   .paragraph .text__title {
     font-family: "Cutive Mono";
     font-size: 1.4em;
@@ -13,7 +14,8 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #343434;
-    text-align: center; }
+    text-align: center;
+    margin-top: 0; }
   .paragraph .text__desc {
     font-family: 'Italianno', cursive;
     font-size: 1.2em;

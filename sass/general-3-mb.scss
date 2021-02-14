@@ -3,7 +3,7 @@
     background-image: url("../img/history/bg-1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    
+    background-attachment: fixed;
   }
 }
 @media only screen and (max-width: 1025px) {
@@ -15,5 +15,7 @@
   body {
     background: #e4db8f;
     background: linear-gradient(122deg, rgba(240,55,52,1) 0%, rgba(199,217,241,1) 35%, rgba(228,219,143,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }

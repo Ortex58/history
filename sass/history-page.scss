@@ -5,10 +5,9 @@ $main-color-text: #343434;
   padding: 0 15px;
   position: relative;
   z-index: 0;
-  /*display: none;*/
-  display: flex;
+  display: none;
   justify-content: space-between;
-  /*opacity: 0;*/
+  opacity: 0;
   opacity: 1;
   transition: all 1.5s ease 0.5s;
   @media only screen and (max-width: 1025px) {
@@ -49,9 +48,9 @@ $main-color-text: #343434;
         padding: 0;
       }
       .text {
-        display: flex;
+        /*display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: flex-start;*/
         &__title {
           font-family: "Cutive Mono";
           font-size: 1.4em;
@@ -72,7 +71,7 @@ $main-color-text: #343434;
           background-color: $main-color-text;
         }
         &__desc {
-          font-family: 'Italianno', cursive;
+          font-family: 'Autogate Regular';
           font-size: 1.2em;
           margin: 23px auto 0 auto;
           line-height: 1.3;
@@ -143,51 +142,26 @@ $main-color-text: #343434;
       margin: 0 auto;
       z-index: 5;
       overflow: hidden;
-      border: 2px solid black;
+      /*border: 2px solid black;*/
       @media only screen and (max-width: 1025px) {
         width: 280px;
         height: 396px;
       }
       @media only screen and (max-width: 450px) {
-        width: 260px;
-        height: 368px;
+        width: 180px;
+        height: 255px;
       }
       
-      .hidden-img-1, .hidden-img-2 {
-        top: 150%;
-        left: 50%;
+      .hidden-img-1, .hidden-img-2, .hidden-img-3,
+      .hidden-img-4, .hidden-img-5 {
+        top: 0;
+        left: 0;
         width: 100%;
         position: absolute;
-        transform: translate(-50%, -50%);
         z-index: 5;
-        --animate-duration: 6s;
-        animation-delay: 1s;
-        &.show {
-          top: 50%;
-        }
-      }
-      .hidden-img-3 {
-        top: 95px;
-        left: 46px;
-        width: 100%;
         opacity: 0;
-        z-index: 5;
-        position: absolute;
-        &.show-people {
-          opacity: 1;
-          transition: all 3s ease .5s;
-        }
-      }
-      .hidden-img-4 {
-        top: 95px;
-        left: 46px;
-        width: 355px;
-        opacity: 0;
-        z-index: 6;
-        position: absolute;
-        &.show-people {
-          opacity: 1;
-        }
+        --animate-duration: 3s;
+        /*animation-delay: 1s;*/
       }
     }
   }
@@ -199,6 +173,9 @@ $main-color-text: #343434;
     z-index: 0;
     opacity: 0;
     height: 0;
+  }
+  &__song {
+    width: 100px;
   }
 }
 .player {

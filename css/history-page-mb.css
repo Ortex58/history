@@ -1,7 +1,14 @@
+@media only screen and (max-width: 1201px) {
+  .main-history {
+    margin-top: 125px; } }
+
 @media only screen and (max-width: 1025px) {
   .main-history__left {
     padding-bottom: 30px; } }
 
 @media only screen and (max-width: 450px) {
   .main-history__left {
-    min-height: 1370px; } }
+    min-height: 1370px;
+    margin-top: 25px; }
+    .main-history__left__up .player__controls #playIcon {
+      max-width: 80px; } }

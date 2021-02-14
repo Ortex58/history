@@ -1,5 +1,7 @@
 @media only screen and (max-width: 1201px) {
-
+  .main-history {
+    margin-top: 125px;
+  }
 }
 @media only screen and (max-width: 1025px) {
   .main-history {
@@ -12,6 +14,12 @@
   .main-history {
     &__left {
       min-height: 1370px;
+      margin-top: 25px;
+      &__up {
+        .player__controls #playIcon {
+          max-width: 80px;
+        }
+      }
     }
   }
 }

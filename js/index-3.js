@@ -17,16 +17,18 @@ let mainSong = document.querySelector('.main__song');
 let firstParagraph = $('.paragraph__first');
 let secondParagraph = $('.paragraph__second');
 let mainHistory = $('.main-history');
+let scrollPage = $('.paragraph__third');
 let startBtn = $('.outerbutton .btn');
 let btnNext = $('.next-btn');
 let btnEnd = $('.end-btn');
+let btnToScrollPage = $('.go-to-scroll-page');
 let btnSources = $('.sources--btn');
 let sources = $('.sources');
 let overlay = $('.outerbutton');
 $(document).ready(function () {
   startBtn.click(function() {
     mainSong.play();
-    mainSong.muted = true;
+    mainSong.muted = false;
     mainSong.volume = 0.1;
     $(this).addClass('animate__backOutUp');
     setTimeout(function () {
@@ -47,6 +49,15 @@ $(document).ready(function () {
       mainHistory.css('opacity', '1');
       mainHistory.css('display', 'flex');
     }, 2600);
+  });
+// Open Scroll page
+  btnToScrollPage.click(function () {
+    console.log("hello");
+    mainHistory.css('opacity', '1');
+    mainHistory.slideToggle(2500);
+    setTimeout(function () {
+      scrollPage.slideToggle(20000);
+    }, 2500);
   });
   
    // Open Sources

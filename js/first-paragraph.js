@@ -7,16 +7,16 @@ let lastParagraph = $('.sources');
 let btnNext = $('.next-btn');
 let btnEnd = $('.end-btn');
 let btnSources = ('.sources--btn');
-let btnToSlide = $('.go-to-slide');
+let btnToSlide = $('.go-to-scroll-page');
 let mainHistory = $('.main-history');
 let slderHistory = $('.slider-history');
 
 
 $(document).ready(function () {
   startBtn.click(function() {
-    // mainSong.play();
-    // mainSong.muted = false;
-    // mainSong.volume = 0.1;
+    mainSong.play();
+    mainSong.muted = false;
+    mainSong.volume = 0.1;
     $(this).addClass('animate__backOutUp');
     setTimeout(function () {
       overlay.addClass('animate__fadeOutLeft');
@@ -38,13 +38,13 @@ $(document).ready(function () {
     }, 2600);
   });
 
-  btnToSlide.click(function () {
-    mainHistory.css('opacity', '0');
-    setTimeout(function () {
-      $('.slider-history').addClass('show');
-      mainHistory.hide();
-    }, 2000);
-  });
+  // btnToSlide.click(function () {
+  //   mainHistory.css('opacity', '0');
+  //   setTimeout(function () {
+  //     $('.paragraph-scroll').addClass('show');
+  //     mainHistory.hide();
+  //   }, 2000);
+  // });
  // Open Sources
   btnToSlide.click(function () {
     console.log("hello");
