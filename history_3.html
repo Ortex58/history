@@ -20,45 +20,7 @@
 </head>
 
 <body>
-	<!-- Main audio -->
-	<div class="main__audio">
-		<audio class="main__song" controls loop>
-			<source src="media/main-song.mp3" type="audio/mp3">
-		</audio>
-	</div>
-	<!-- Main audio volume-->
-	<div class="volume">
-		<span class="volume__aloud animate__animated active">
-			<img src="media/vol-1.png" alt="volume aloud">
-		</span>
-		<span class="volume__mute animate__animated">
-			<img src="media/vol-2.png" alt="volume mute">
-		</span>
-	</div>
-	<!-- Main equalizer -->
-	<div class="equalizer">
-		<svg xmlns="http://www.w3.org/2000/svg" class="equilizer" viewBox="0 0 128 128">
-			<g>
-				<title>Audio Equilizer</title>
-				<rect class="bar" transform="translate(0,0)" y="15"></rect>
-				<rect class="bar" transform="translate(25,0)" y="15"></rect>
-				<rect class="bar" transform="translate(50,0)" y="15"></rect>
-				<rect class="bar" transform="translate(75,0)" y="15"></rect>
-				<rect class="bar" transform="translate(100,0)" y="15"></rect>
-			</g>
-		</svg>
-	</div>
-	<!-- Main angles -->
-	<div class="angles">
-		<span class="angles__left-top"></span>
-		<span class="angles__left-bottom"></span>
-		<span class="angles__right-top"></span>
-		<span class="angles__right-bottom"></span>
-	</div>
-	<!-- Main start button text -->
-	<div class="outerbutton animate__animated">
-		<button class="animate__animated btn text__button text__button--next">PLAY</button>
-	</div>
+
 	<!-- header -->
 	<header class="header-3">
 		<button class="header-3__burger">
@@ -302,8 +264,47 @@
 			</button>
 		</div>
 	</section>
+
+		<!-- Main audio -->
+		<div class="main__audio">
+			<audio class="main__song" controls loop>
+				<source src="media/main-song.mp3" type="audio/mp3">
+			</audio>
+		</div>
+		<!-- Main audio volume-->
+		<div class="volume">
+			<span class="volume__aloud animate__animated active">
+				<img src="media/vol-1.png" alt="volume aloud">
+			</span>
+			<span class="volume__mute animate__animated">
+				<img src="media/vol-2.png" alt="volume mute">
+			</span>
+		</div>
+		<!-- Main equalizer -->
+		<div class="equalizer">
+			<svg xmlns="http://www.w3.org/2000/svg" class="equilizer" viewBox="0 0 128 128">
+				<g>
+					<title>Audio Equilizer</title>
+					<rect class="bar" transform="translate(0,0)" y="15"></rect>
+					<rect class="bar" transform="translate(25,0)" y="15"></rect>
+					<rect class="bar" transform="translate(50,0)" y="15"></rect>
+					<rect class="bar" transform="translate(75,0)" y="15"></rect>
+					<rect class="bar" transform="translate(100,0)" y="15"></rect>
+				</g>
+			</svg>
+		</div>
+		<!-- Main angles -->
+		<div class="angles">
+			<span class="angles__left-top"></span>
+			<span class="angles__left-bottom"></span>
+			<span class="angles__right-top"></span>
+			<span class="angles__right-bottom"></span>
+		</div>
+		<!-- Main start button text -->
+		<div class="outerbutton animate__animated">
+			<button class="animate__animated btn text__button text__button--next">PLAY</button>
+		</div>
 	<script src="libs/js/jquery.min.js"></script>
-	<script type="text/javascript" src="libs/js/slick.min.js"></script>
 	<script src="js/slider-story.js"></script>
 	<script src="js/media.js"></script>
 	<script src="js/index-3.js"></script>

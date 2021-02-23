@@ -90,3 +90,16 @@ volume.on('click', function() {
     mainSong.muted = false;
 	}
 });
+
+//Home slider
+$(document).ready(function(){
+  $('.slider__left').slick({
+    dots: true,
+    infinite: true,
+    vertical: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    arrows: true
+  });
+});
