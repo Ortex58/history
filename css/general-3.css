@@ -28,6 +28,15 @@ body {
   body ul {
     padding: 0; }
 
+h1 {
+  font-family: "Cutive Mono";
+  font-size: 1.4em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #343434;
+  margin-top: 0; }
+
 .btn {
   background-color: transparent;
   border: none;

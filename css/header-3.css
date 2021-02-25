@@ -8,6 +8,9 @@
   top: 0; }
   .header-3.open {
     z-index: 99; }
+  .header-3.scrolled {
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 11; }
   .header-3__burger {
     position: absolute;
     top: 32px;

@@ -3,6 +3,7 @@ $max: 75px;
 $color-equalizer: #fff;
 $main-color-text: #343434;
 $foto-frame-color: #343434;
+$main-color-text: #343434;
 :root {
   --base-color: rgba(0, 0, 0, 1);
   --hover-color: rgba(255, 255, 255, 1);
@@ -33,6 +34,15 @@ body {
   ul {
     padding: 0;
   }
+}
+h1 {
+  font-family: "Cutive Mono";
+  font-size: 1.4em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $main-color-text;
+  margin-top: 0;
 }
 .btn {
   background-color: transparent;

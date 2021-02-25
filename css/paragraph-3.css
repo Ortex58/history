@@ -8,14 +8,7 @@
     display: none;
     position: relative; }
   .paragraph .text__title {
-    font-family: "Cutive Mono";
-    font-size: 1.4em;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #343434;
-    text-align: center;
-    margin-top: 0; }
+    text-align: center; }
   .paragraph .text__desc {
     font-family: 'Italianno', cursive;
     font-size: 1.2em;
