@@ -5,11 +5,12 @@
   position: fixed;
   right: 0;
   left: 0;
-  top: 0; }
+  top: 0;
+  z-index: 1; }
   .header-3.open {
     z-index: 99; }
   .header-3.scrolled {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(245, 234, 170, 0.9);
     z-index: 11; }
   .header-3__burger {
     position: absolute;

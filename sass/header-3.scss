@@ -7,11 +7,12 @@ $main-color-text: #343434;
   right: 0;
   left: 0;
   top: 0;
+  z-index: 1;
   &.open {
     z-index: 99;
   }
   &.scrolled {
-    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(245, 234, 170, 0.9);
     z-index: 11;
     }
   &__burger {

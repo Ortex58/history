@@ -11,16 +11,38 @@
   src: url("../font/RobotoCondensed-Regular.ttf"); }
 
 @font-face {
-  font-family: "Italianno";
-  src: url("../font/Italianno-Regular.ttf"); }
-
-@font-face {
   font-family: "Neucha-Regular";
   src: url("../font/Neucha-Regular.ttf"); }
 
 /*@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');*/
 /*@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto+Mono&display=swap');*/
+#p_prldr {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 101; }
+
+.contpre small {
+  font-size: 25px; }
+
+.contpre {
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  margin-left: -125px;
+  margin-top: -75px;
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: -2px;
+  text-align: center;
+  line-height: 35px; }
+
 /* variable  */
 :root {
   --base-color: rgba(0, 0, 0, 1);
@@ -245,6 +267,65 @@ h1 {
     animation-delay: -3.4s; }
   .equalizer .bar:nth-child(5) {
     animation-delay: -3.1s; }
+  .equalizer.show {
+    display: block; }
+
+@keyframes equalize {
+  0% {
+    height: 60px; }
+  4% {
+    height: 50px; }
+  8% {
+    height: 40px; }
+  12% {
+    height: 30px; }
+  16% {
+    height: 20px; }
+  20% {
+    height: 30px; }
+  24% {
+    height: 40px; }
+  28% {
+    height: 10px; }
+  32% {
+    height: 40px; }
+  36% {
+    height: 60px; }
+  40% {
+    height: 20px; }
+  44% {
+    height: 40px; }
+  48% {
+    height: 70px; }
+  52% {
+    height: 30px; }
+  56% {
+    height: 10px; }
+  60% {
+    height: 30px; }
+  64% {
+    height: 50px; }
+  68% {
+    height: 60px; }
+  72% {
+    height: 70px; }
+  76% {
+    height: 80px; }
+  80% {
+    height: 70px; }
+  84% {
+    height: 60px; }
+  88% {
+    height: 50px; }
+  92% {
+    height: 60px; }
+  96% {
+    height: 70px; }
+  100% {
+    height: 80px; } }
+
+.show {
+  display: block; }
 
 .volume {
   position: fixed;
@@ -292,11 +373,12 @@ h1 {
   position: fixed;
   right: 0;
   left: 0;
-  top: 0; }
+  top: 0;
+  z-index: 1; }
   .header-3.open {
     z-index: 99; }
   .header-3.scrolled {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(245, 234, 170, 0.9);
     z-index: 11; }
   .header-3__burger {
     position: absolute;
@@ -524,8 +606,7 @@ h1 {
     .grid-item .c-preview__img {
       position: relative;
       width: 100%;
-      z-index: 1;
-      mix-blend-mode: screen; }
+      z-index: 1; }
       .grid-item .c-preview__img img {
         display: block;
         width: 100%; }
@@ -608,14 +689,16 @@ h1 {
     width: 4%; } }
 
 @media only screen and (max-width: 1025px) {
-  .home__title--text {
-    font-size: 2.8em; }
+  .home__title {
+    margin-top: 180px; }
+    .home__title--text {
+      font-size: 2.8em; }
   .grid-item .c-preview:hover .c-preview__title {
     font-size: 1.6em; } }
 
 @media only screen and (max-width: 769px) {
   .home__title {
-    margin-top: 190px;
+    margin-top: 160px;
     padding: 0 15px; }
     .home__title--text {
       font-size: 2.3em; }
@@ -628,7 +711,7 @@ h1 {
 
 @media only screen and (max-width: 450px) {
   .home__title {
-    margin-top: 180px; }
+    margin-top: 130px; }
     .home__title--text {
       font-size: 2em; }
   .grid-sizer, .grid-item {

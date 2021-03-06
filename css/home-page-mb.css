@@ -9,14 +9,16 @@
     width: 4%; } }
 
 @media only screen and (max-width: 1025px) {
-  .home__title--text {
-    font-size: 2.8em; }
+  .home__title {
+    margin-top: 180px; }
+    .home__title--text {
+      font-size: 2.8em; }
   .grid-item .c-preview:hover .c-preview__title {
     font-size: 1.6em; } }
 
 @media only screen and (max-width: 769px) {
   .home__title {
-    margin-top: 190px;
+    margin-top: 160px;
     padding: 0 15px; }
     .home__title--text {
       font-size: 2.3em; }
@@ -29,7 +31,7 @@
 
 @media only screen and (max-width: 450px) {
   .home__title {
-    margin-top: 180px; }
+    margin-top: 130px; }
     .home__title--text {
       font-size: 2em; }
   .grid-sizer, .grid-item {

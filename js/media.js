@@ -1,6 +1,5 @@
 let mySong = document.getElementById('mySong');
 let iconSong = document.getElementById('playIcon');
-let equalizer = document.querySelector('.equalizer');
 let btnMainStory = document.querySelector('.text__button--next');
 let btnToScrollPage1 = $('.go-to-scroll-page');
 
@@ -11,7 +10,6 @@ iconSong.onclick = function () {
 		mySong.play();
 		mySong.volume = 0.3;
 		iconSong.src = "media/pause-button.png"
-		equalizer.classList.add("show");
 		$(".player__text").last().html('Зупинити Аудіо текст');
 		
 		if (play) {
@@ -38,18 +36,15 @@ iconSong.onclick = function () {
 	} else {
 		mySong.pause();
 		iconSong.src = "media/play-button.png"
-		equalizer.classList.remove("show");
 		$(".player__text").last().html('Аудіо текст');
 	}
 }
 mySong.onended = function() {
 	iconSong.src = "media/play-button.png"
-	equalizer.classList.remove("show");
 	btnMainStory.addClass('show');
 };
 btnToScrollPage1.click(function () {
 	mySong.pause();
-	equalizer.classList.remove("show");
 });
 $.fn.animate_Text = function () {
 	var string = this.text();

@@ -42,8 +42,7 @@
     .grid-item .c-preview__img {
       position: relative;
       width: 100%;
-      z-index: 1;
-      mix-blend-mode: screen; }
+      z-index: 1; }
       .grid-item .c-preview__img img {
         display: block;
         width: 100%; }

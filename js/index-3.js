@@ -13,6 +13,7 @@ $(".sandwich").click(function () {
   }
 });
 
+let equalizer = document.querySelector('.equalizer');
 let mainSong = document.querySelector('.main__song');
 let firstParagraph = $('.paragraph__first');
 let secondParagraph = $('.paragraph__second');
@@ -30,6 +31,7 @@ $(document).ready(function () {
     mainSong.play();
     mainSong.muted = false;
     mainSong.volume = 0.1;
+    equalizer.classList.add("show");
     $(this).addClass('animate__backOutUp');
     setTimeout(function () {
       overlay.addClass('animate__fadeOutLeft');
@@ -74,6 +76,7 @@ $(document).ready(function () {
 let volume = $('.volume');
 let volume_aloud = $('.volume__aloud');
 let volume_mute = $('.volume__mute');
+let img = $('.c-preview');
 volume_mute.hide();
 volume.on('click', function () {
   if (volume_aloud.hasClass("active")) {
@@ -82,34 +85,30 @@ volume.on('click', function () {
     volume_aloud.toggleClass('active')
     volume_mute.toggleClass('active')
     mainSong.muted = true;
+    equalizer.classList.remove("show");
   } else {
     volume_mute.hide();
     volume_aloud.show();
     volume_aloud.toggleClass('active')
     volume_mute.toggleClass('active')
     mainSong.muted = false;
+    equalizer.classList.add("show");
   }
 });
-
-//Home slider
-$(document).ready(function () {
-
+img.on('click', function () {
+  volume_aloud.hide();
+    volume_mute.show();
+    volume_aloud.toggleClass('active')
+    volume_mute.toggleClass('active')
+    mainSong.muted = true;
+    equalizer.classList.remove("show");
 });
-$(window).on("load resize", function () {
-  // external js: masonry.pkgd.js
-  var $grid = $('.grid').masonry({
-    itemSelector: '.grid-item',
-    columnWidth: '.grid-sizer',
-    gutter: '.gutter-sizer',
-    horizontalOrder: true, // new!
-    percentPosition: true,
-  });
-});
-
 // header on scroll
 const elem = $('body >header');
 const scrolled = () => {
-   const threshold = $(document).scrollTop() > 50;
-   elem.toggleClass('scrolled', threshold);
-   };
+  const threshold = $(document).scrollTop() > 50;
+  if (elem.hasClass('fixed')) {
+    elem.toggleClass('scrolled', threshold);
+  };
+}
 $(window).on({ scroll: scrolled });

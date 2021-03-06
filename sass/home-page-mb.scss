@@ -19,6 +19,7 @@
 @media only screen and (max-width: 1025px) {
   .home {
     &__title {
+      margin-top: 180px;
       &--text {
         font-size: 2.8em;
       }
@@ -31,7 +32,7 @@
 @media only screen and (max-width: 769px) {
   .home {
     &__title {
-      margin-top: 190px;
+      margin-top: 160px;
       padding: 0 15px;
       &--text {
         font-size: 2.3em;
@@ -53,7 +54,7 @@
 @media only screen and (max-width: 450px) {
   .home {
     &__title {
-      margin-top: 180px;
+      margin-top: 130px;
       &--text {
         font-size: 2em;
       }
