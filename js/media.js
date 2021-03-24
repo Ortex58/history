@@ -13,8 +13,8 @@ iconSong.onclick = function () {
 		$(".player__text").last().html('Зупинити Аудіо текст');
 		
 		if (play) {
-			$('#example').show();
-			$('#example').animate_Text(play);
+			$('#shortHistory').show();
+			$('#shortHistory').animate_Text(play);
 		}
 		// fadeInUp img-1 in images
 		setTimeout(function () {

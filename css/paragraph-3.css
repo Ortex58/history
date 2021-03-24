@@ -2,7 +2,7 @@
   position: relative;
   z-index: 2;
   margin-top: 250px; }
-  .paragraph__first, .paragraph__second {
+  .paragraph__first {
     max-width: 50%;
     margin: 0 auto;
     display: none;

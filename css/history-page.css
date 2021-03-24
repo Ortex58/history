@@ -132,9 +132,9 @@
         --animate-duration: 3s;
         /*animation-delay: 1s;*/ }
 
-#example .new {
+#shortHistory .new {
   opacity: 0; }
 
-#example .div_opacity {
+#shortHistory .div_opacity {
   transition: opacity 0.2s ease-in-out;
   opacity: 1; }

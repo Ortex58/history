@@ -16,8 +16,8 @@ $(".sandwich").click(function () {
 let equalizer = document.querySelector('.equalizer');
 let mainSong = document.querySelector('.main__song');
 let firstParagraph = $('.paragraph__first');
-let secondParagraph = $('.paragraph__second');
-let mainHistory = $('.main-history');
+// let secondParagraph = $('.paragraph__second');
+let mainHistory = $('.main-history'); // VOICE
 let scrollPage = $('.paragraph__third');
 let startBtn = $('.outerbutton .btn');
 let btnNext = $('.next-btn');
@@ -41,17 +41,18 @@ $(document).ready(function () {
   btnNext.click(function () {
     firstParagraph.slideToggle(2500);
     setTimeout(function () {
-      secondParagraph.slideToggle(6500);
-    }, 2600);
-  });
-  // Main history
-  btnEnd.click(function () {
-    secondParagraph.slideToggle(2500);
-    setTimeout(function () {
       mainHistory.css('opacity', '1');
       mainHistory.css('display', 'flex');
     }, 2600);
   });
+  // Main history
+  // btnEnd.click(function () {
+  //   secondParagraph.slideToggle(2500);
+  //   setTimeout(function () {
+  //     mainHistory.css('opacity', '1');
+  //     mainHistory.css('display', 'flex');
+  //   }, 2600);
+  // });
   // Open Scroll page
   btnToScrollPage.click(function () {
 
