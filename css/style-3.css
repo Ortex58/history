@@ -3,8 +3,8 @@
   src: url("../font/autogate-sans-rough.ttf"); }
 
 @font-face {
-  font-family: "Autogate Regular";
-  src: url("../font/Autogate Regular DEMO.ttf"); }
+  font-family: "Ubuntu-Regular";
+  src: url("../font/Ubuntu-Regular.ttf"); }
 
 @font-face {
   font-family: "Roboto Condensed.ttf";
@@ -14,9 +14,6 @@
   font-family: "Neucha-Regular";
   src: url("../font/Neucha-Regular.ttf"); }
 
-/*@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');*/
-/*@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto+Mono&display=swap');*/
 /* variable  */
 :root {
   --base-color: rgba(0, 0, 0, 1);
@@ -67,8 +64,6 @@ h1 {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 15px 20px;
-  border: 2px solid var(--base-color);
   font-size: 1rem;
   cursor: pointer; }
   .horizontal > .text {
@@ -80,7 +75,9 @@ h1 {
     background-position: 100% 0;
     -webkit-background-clip: text;
     background-clip: text;
-    transition: background-position 300ms; }
+    transition: background-position 300ms;
+    padding: 15px 20px;
+    border: 2px solid var(--base-color); }
   .horizontal::before {
     content: '';
     position: absolute;
@@ -299,7 +296,7 @@ h1 {
     height: 80px; } }
 
 .show {
-  display: block; }
+  display: flex; }
 
 .volume {
   position: fixed;
@@ -663,7 +660,7 @@ h1 {
         margin: 0 auto;
         background-color: #343434; }
       .main-history__left__down .text__desc {
-        font-family: 'Autogate Regular';
+        font-family: 'Ubuntu-Regular';
         font-size: 1.2em;
         margin: 23px auto 0 auto;
         line-height: 1.3;
