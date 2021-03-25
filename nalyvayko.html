@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="uk">
+<!-- use animate css-->
+
+<head>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>History-Nalyvayko</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/select.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+		integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<link rel="stylesheet" href="libs/css/slick.css">
+	<!-- Add the new slick-theme.css if you want the default styling -->
+	<link rel="stylesheet" href="libs/css/slick-theme.css">
+	<link rel="stylesheet" href="libs/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/style-3.css">
+</head>
+
+<body>
+
+	<!-- header -->
+	<header class="header-3 fixed">
+		<button class="header-3__burger">
+			<div class="sandwich">
+				<div class="sw-topper"></div>
+				<div class="sw-bottom"></div>
+				<div class="sw-footer"></div>
+			</div>
+		</button>
+		<div class="header-3__logo">
+			<a href="index.html" title="logo">THROUGH MY EYES<br>TO YOUR HEART</a>
+		</div>
+		<nav class="header-3__nav animate__animated">
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="#">About Us</a>
+				</li>
+				<li class="language">
+					<a href="#" class="active">ENG</a>
+					<span class="divider">/</span>
+					<a href="#">UA</a>
+				</li>
+			</ul>
+		</nav>
+
+	</header>
+	<!-- Paragraph -->
+	<section class="paragraph">
+		<div class="paragraph__first" style="display: none;">
+			<h1 class="text__title">Наливайко Олексій Миколайович</h1>
+			<p class="text__desc">
+				Наливайко Олексій Миколайович народився в с. Єрковці Київської обл. в 1936 році. Велика родина, яка
+				складалася з мами, батька, дядька, старшого брата та молодших сестричок, мало не щодня дивилась в
+				обличчя смерті: в їхньому будинку розквартирувались німецькі солдати, які вселяли страх не тільки дітям,
+				але й дорослим. Селом пройшла чутка про те, що не сьогодні-завтра ромів збираються розстріляти. План
+				зірвав неочікуваний відступ окупантів:
+			</p>
+			<button class="btn text__button text__button--next next-btn horizontal">
+				<span class="text">Читати далі</span>
+			</button>
+		</div>
+	</section>
+	<!-- Main History -->
+	<section class="main-history">
+		<div class="main-history__left">
+			<div class="main-history__left__up">
+				<div class="player">
+					<div class="player__controls">
+						<img src="media/play-button.png" alt="play song" id="playIcon">
+						<span class="player__text">Аудіо текст</span>
+						<audio id="mySong">
+							<source src="media/song-audio.mp3" type="audio/mp3">
+						</audio>
+					</div>
+					<div class="player__song"></div>
+				</div>
+			</div>
+			<div class="main-history__left__down">
+				<div class="text">
+					<h2 class="text__title">Наливайко Олексій Миколайович</h2>
+					<hr class="sep" />
+					<p class="text__desc" id="shortHistory" style="display: none;">
+						Я помню, как отступали немцы. Сначала тихо. Когда отступали, мы даже не слыхали, что немцы из
+						хаты вышли. По маминых словах, рядом с домом стояла машина крытая и нас в этот день должны были
+						ночью расстрелять.
+						Да, уже мы были на стороже… Сидим. Мама возле окна… А потом, когда настало утро, смотрю,
+						говорит, встану, посмотрю, – нет той машины? Скрылась машина та, а то мы ждали вчера, что может
+						нам гаплык будет.
+						А потом уже, когда началось уже рассветать, так они когда выходили уже, так они начали палить
+						это… Сожгли склады с хлебом и стоят с автоматами и охраняют, – хочешь хлеб, лезь в огонь и бери,
+						но тушить не давали. Так у меня отец под огнем тем лазил туда в этот барак за хлебом. Ну он уже
+						пригоревший был, вот это помню. И вот только, когда они вот это все спалили, тогда ушли.
+					</p>
+					<button class="btn text__button text__button--next horizontal go-to-scroll-page show">
+						<span class="text">ПРОПУСТИТИ</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="main-history__right">
+			<div class="main-history__right__img">
+
+				<img src="img/history/nalyvayko/1.png" alt="вогонь" class="hidden-img-1 animate__animated">
+				<img src="img/history/nalyvayko/2.png" alt="вогонь" class="hidden-img-2 animate__animated">
+				<img src="img/history/nalyvayko/3.png" alt="хліб в руках" class="hidden-img-3 animate__animated">
+				<img src="img/history/nalyvayko/4.png" alt="солдат" class="hidden-img-4 animate__animated">
+				<img src="img/history/nalyvayko/5.png" alt="дим" class="hidden-img-5 animate__animated">
+				<!-- <img src="img/history/3.png" alt="girl and peaple"> -->
+			</div>
+		</div>
+	</section>
+
+	<section class="paragraph paragraph-scroll">
+		<div class="paragraph__third" style="display: none;">
+			<h4 class="text__title paragraph-scroll--title">Наливайко Олексій Миколайович</h4>
+			<p class="text__desc paragraph-scroll--desc">
+				Основною проблемою, з якою роми, як і багато інших жителів окупованих територій, стикалися повсякденно,
+				була нестача їжі. Відступ Червоної армії з території України супроводжувався застосовуванням тактики
+				«випаленої землі». Знищувалось все, що могло слугувати життєзабезпеченню не лише військ ворога, а й і
+				цивільного населення. Найбільш поширеними елементами цієї тактики були: знищення запасів харчових
+				продуктів і врожаю, забруднення або отруєння джерел питної води, руйнування шляхів і засобів транспорту,
+				техніки, будівель і житла, іноді навіть цілих міст.
+				Ще на початку ХХ ст. тактику «випаленої землі» було визнано воєнним злочином. Однак у СРСР з початком
+				німецько-радянської війни цю тактику було «узаконено» офіційними постановами РНК СРСР і ЦК ВКП(б), які
+				зобов’язували партійні осередки й органи влади знищувати все, що не вдалося евакуювати на схід.
+				Після відступу “совєтів” «викачування» продовольства продовжувалося вже окупантами, через що для мирного
+				населення пошук їжі перетворився на щоденні поневіряння, на своєрідне ремесло: десь щось виміняти,
+				перепродати, інколи виростити на присадибній ділянці або ж вкрасти тощо.
+
+				Зокрема, дослідниця київського окупаційного повсякдення Т. Заболотна зазначає, що пошук продуктів був
+				головною проблемою упродовж усього періоду перебування гітлерівців у Києві [3]. Зі свідчень наших
+				інформантів бачимо, що така ситуація була притаманна й іншим регіонам.
+
+				У традиційному ромському суспільстві існує складна система табу, пов’язаних із уявленнями про
+				«чисте/нечисте». Проте зі свідчень інформантів бачимо, що в ситуації екстреми часто досить кардинально
+				змінювались стандарти того, що можна і що було заборонено вживати в їжу. Таким чином щезала заборона на
+				вживання залишків їжі з чужого столу:<i> «…картошки начистит, лука, капусты – и варит, а лушпайки нам
+					отдавала» [1].</i>
+
+				Зі схожою ситуацією зіштовхнулась родина Олексія Миколайовича Наливайка.
+				Олексій народився в с. Єрковці Київської обл. в 1936 році. Велика родина, яка складалася з мами, батька,
+				дядька, старшого брата та молодших сестричок, мало не щодня дивилась в обличчя смерті: в їхньому будинку
+				розквартирувались німецькі солдати, які вселяли страх не тільки дітям, але й дорослим. Селом пройшла
+				чутка про те, що не сьогодні-завтра ромів збираються розстріляти. План зірвав неочікуваний відступ
+				окупантів:
+				<i>Я помню, как отступали немцы. Сначала тихо. Когда отступали, мы даже не слыхали, что немцы из хаты
+					вышли. Да, это рассказывала мама уже, то по маминых словах, говорит, что стояла машина крытая и нас
+					в
+					этот день должны были ночью расстрелять. Это цыган собирали, чтобы расстрелять.
+					Да, уже мы были на стороже сидим, мама возле окна… А потом, когда настало утро, смотрю говорит,
+					встану,
+					посмотрю, нет той машины? Скрылась машина та, а то мы ждали вчера, что может нам гаплык будет. И
+					когда
+					они вышли, говорит: «Дети нет тут, тихо, спокойно».
+					А потом уже, когда началось уже рассветать, так они когда выходили уже, ну не было уже, почти
+					половину
+					села освободили, так они начали палить это… Сожгли склады с хлебом и стоят с автоматами и охраняют,
+					–
+					хочешь хлеб, лезь в огонь и бери, но тушить не давали. Так у меня отец под огнем тем лазил туда в
+					этот
+					барак за хлебом. Ну он уже пригоревший был, вот это помню. И вот только, когда они вот это все
+					спалили,
+					тогда ушли [3].</i>
+			</p>
+			<div class="sources" style="display: none;">
+				<h3 class="sources--title">Літературні джерела</h3>
+				<ol>
+					<li>Транскрипт інтерв’ю №49670 USC SFI // Архів УЦВІГ.</li>
+					<li>Транскрипт інтерв’ю № 49458 USC SFI // Архів УЦВІГ.</li>
+					<li>Заболотна Т. Повсякденне життя киян в умовах нацистської окупації (вересень-грудень 1941 р.)
+						// Український історичний журнал. – 2007. – № 5. – С. 113</li>
+					<li>Їхня пам'ять моїми очима / Авт.-упоряд. Т. Сторожко, Н. Томенко. - Кременчук: Молодіжна
+						агенція з адвокації ромської культури «АРКА», 2018. - 30 с.</li>
+				</ol>
+
+			</div>
+			<button class="btn text__button text__button--next sources--btn horizontal">
+				<span class="text">Джерела</span>
+			</button>
+		</div>
+	</section>
+
+	<!-- Main audio -->
+	<div class="main__audio">
+		<audio class="main__song" controls loop>
+			<source src="media/main-song.mp3" type="audio/mp3">
+		</audio>
+	</div>
+	<!-- Main audio volume-->
+	<div class="volume">
+		<span class="volume__aloud animate__animated active">
+			<img src="media/vol-1.png" alt="volume aloud">
+		</span>
+		<span class="volume__mute animate__animated">
+			<img src="media/vol-2.png" alt="volume mute">
+		</span>
+	</div>
+	<!-- Main equalizer -->
+	<div class="equalizer">
+		<svg xmlns="http://www.w3.org/2000/svg" class="equilizer" viewBox="0 0 128 128">
+			<g>
+				<title>Audio Equilizer</title>
+				<rect class="bar" transform="translate(0,0)" y="15"></rect>
+				<rect class="bar" transform="translate(25,0)" y="15"></rect>
+				<rect class="bar" transform="translate(50,0)" y="15"></rect>
+				<rect class="bar" transform="translate(75,0)" y="15"></rect>
+				<rect class="bar" transform="translate(100,0)" y="15"></rect>
+			</g>
+		</svg>
+	</div>
+	<!-- Main angles -->
+	<div class="angles">
+		<span class="angles__left-top"></span>
+		<span class="angles__left-bottom"></span>
+		<span class="angles__right-top"></span>
+		<span class="angles__right-bottom"></span>
+	</div>
+	<!-- Main start button text -->
+	<div class="outerbutton animate__animated">
+		<button class="animate__animated btn text__button text__button--next">PLAY</button>
+	</div>
+	<script src="libs/js/jquery.min.js"></script>
+	<script src="js/media.js"></script>
+	<script src="js/index-3.js"></script>
+
+</body>
+
+</html>
